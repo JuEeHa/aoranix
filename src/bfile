@@ -1,0 +1,4 @@
+depend=libaora libterminal cmd
+build=
+link=
+install=

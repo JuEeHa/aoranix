@@ -1,0 +1,9 @@
+depend=sh-util
+
+configure=cp config/$target/*.h config/; \
+          sed -i s,AORADIR,"\"$AORA\"", config/b.h
+clean=rm -f $out $obj config/*.h
+
+mode=many
+out=b
+depfile=config/*.h

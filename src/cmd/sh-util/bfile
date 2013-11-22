@@ -1,0 +1,10 @@
+mode=many
+
+build=cp $infile $outfile
+link=
+clean=rm -f $out
+
+out=aora c l
+in-aora=aora.sh
+in-c=c.sh
+in-l=l.sh

@@ -1,0 +1,4 @@
+aoranix is a collection of stuff that will give *nix more aora-like toolchain
+
+to build:
+./bootstrap.sh
