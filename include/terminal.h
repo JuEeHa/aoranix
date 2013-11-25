@@ -8,6 +8,7 @@ struct termsize {
 	uint columns;
 };
 
+int terminit(int fd);
 int termgetsize(int fd, struct termsize *ts);
 int termgetmode(int fd);
 int termsetmode(int fd, int mode);

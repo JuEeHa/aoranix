@@ -3,8 +3,10 @@
 #include <aora.h>
 #include <terminal.h>
 
+/* TODO: implement per-fd __tm_mode */
+extern int __tm_mode;
+
 int
 termgetmode(int fd) {
-	/* TODO: implement termgetmode */
-	return tm_normal;
+	return __tm_mode;
 }

@@ -3,6 +3,8 @@
 
 #include "config/b.h"
 /* TODO: add building only if file in $in(-target) or $depfile has been changed */
+/* TODO: building cross-b (prefixing commands) */
+/* TODO: cross-building with b (prefixing output files) */
 #define debg(...) writefmt(1, __VA_ARGS__);
 
 int cflag, iflag, vflag;
