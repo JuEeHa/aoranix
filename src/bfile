@@ -1,4 +1,4 @@
-depend=libaora libterminal cmd
+depend=libaora libterminal toolchain
 build=
 link=
 install=

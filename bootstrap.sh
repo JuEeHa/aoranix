@@ -3,7 +3,7 @@ export AORA=$(readlink -f $(dirname $0))
 export PATH="$AORA/bin:$PATH"
 mkdir -p $AORA/bin $AORA/lib
 
-cd $AORA/src/cmd/sh-util
+cd $AORA/src/toolchain/sh-util
 for i in c l
 do
 	install $i.sh $AORA/bin/$i
@@ -14,7 +14,7 @@ c *.c
 l -lo $AORA/lib/libaora.a *.o
 rm *.o
 
-cd ../cmd
+cd ../toolchain
 cp config/nix/b.h config/b.h
 sed -i s,AORADIR,"\"$AORA\"", config/b.h
 c b.c
