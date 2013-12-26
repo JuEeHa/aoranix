@@ -56,4 +56,5 @@ then
 	$cc -o "$out" $lflags $ofiles $libs || exit 1
 else
 	ar r "$out" $ofiles || exit 1
+	ranlib "$out"
 fi

@@ -167,7 +167,7 @@ setvars(void) {
 	tmpbuf=0;
 	tmpbuflen=0;
 	d=opendir(".");
-	while(e=readdir(d))
+	while((e=readdir(d)))
 		if(!strcmp(strend(e->d_name, 2), ".c")) {
 			tmpbuflen+=strlen(e->d_name)+1;
 			if(!tmpbuf) {
@@ -278,7 +278,7 @@ doclean(void) {
 	cleanobjslen=0;
 	
 	d=opendir(".");
-	while(e=readdir(d))
+	while((e=readdir(d)))
 		if(!strcmp(strend(e->d_name, objextlen), objext)) {
 			cleanobjslen+=strlen(e->d_name)+1;
 			if(!cleanobjs) {
